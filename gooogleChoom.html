@@ -9,12 +9,93 @@
         <title>Gooogle Choome</title>
         <!-- Google home page clone seen from firefox browser 2022 -->
         <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100vw;
+                min-width: 400px;
+                font-size: 14px;
+                font-family: arial, sans-serif;
+                color: #202124;
+                background-color: #fff;
+                overflow: hidden;
+            }
 
+            #googleLogo {
+                position: fixed;
+            }
+
+            footer {
+                box-sizing: border-box;
+                position: relative;
+                top: 464px;
+                color: #70757a;
+            }
+
+            #footerBlock {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .footerLinks a {
+                padding: 18px;
+                text-decoration: none;
+                color: #70757a;
+            }
+
+            .footerLinks {
+                padding-top: 18px;
+            }
+
+            .footerLinks a:hover {
+                padding: 10px;
+                text-decoration: underline;
+                color: #70757a;
+            }
+
+            #country {
+                width: 100vw;
+                height: 17.3333px;
+                padding: 15px 20px;
+                border-bottom: 1px solid #dadce0;
+                font-size: 15px;
+                font-weight: normal;
+                color: #70757a;
+            }
+
+            #carbonNeutral {
+                white-space: nowrap;
+                vertical-align: top;
+            }
+
+            #carbonNeutral:hover {
+                text-decoration: underline;
+            }
         </style>
     </head>
 
     <body>
-        
+        <header></header>
+        <img id="googleLogo" alt="Google" src="googlelogo_color_272x92dp.png" width="272" height="92">
+        <main></main>
+        <footer>
+            <div id="country">United Kingdom</div>
+            <div id="footerBlock">
+                <div class="footerLinks">
+                    <a href="">Advertising</a>
+                    <a href="">Business</a>
+                    <a href="">How Search works</a>
+                </div>
+                <div class="footerLinks"><a><img src="leaf.png" width="12.25px" height="14px" alt="leaf"> <span id="carbonNeutral">Carbon neutral since 2007</span></a></div>
+                <div class="footerLinks">
+                    <a href="">Privacy</a>
+                    <a href="">Terms</a>
+                    <a href="">Settings</a>
+                </div>
+            </div>
+        </footer>
     </body>
 
 </html>
